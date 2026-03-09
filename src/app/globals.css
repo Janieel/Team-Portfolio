@@ -1,2 +1,63 @@
 @import "tailwindcss";
+body {
+   min-height: 100vh;
+   background: #0a0a0f;
 
+}
+
+.orb-global {
+  position: fixed;  /* Changed from absolute to fixed */
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;  /* Behind all content */
+}
+
+
+.orb-1 {
+  top: -100px;
+  left: -150px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(108, 99, 255, 0.22) 0%, transparent 70%);
+  animation: drift1 12s ease-in-out infinite alternate;
+}
+
+.orb-2 {
+  bottom: 0;
+  right: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255, 101, 132, 0.18) 0%, transparent 70%);
+  animation: drift2 10s ease-in-out infinite alternate;
+}
+
+.orb-3 {
+  top: 40%;
+  left: 60%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(67, 233, 123, 0.12) 0%, transparent 70%);
+  animation: drift3 14s ease-in-out infinite alternate;
+}
+
+@keyframes drift1 {
+  from { transform: translate(0, 0); }
+  to { transform: translate(60px, 40px); }
+}
+
+@keyframes drift2 {
+  from { transform: translate(0, 0); }
+  to { transform: translate(-40px, -60px); }
+}
+
+@keyframes drift3 {
+  from { transform: translate(0, 0); }
+  to { transform: translate(-50px, 30px); }
+}
+
+/* Make sure content is above orbs */
+main {
+  position: relative;
+  z-index: 1;
+}
