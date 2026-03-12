@@ -3,7 +3,7 @@ import React from 'react'
 const Teamwork = () => {
   return (
     <div> 
-        <div className=' px-20'>
+        <div className=' px-6 md:px-20 bg-cyan-300'>
            <div className='flex items-center'>
               <div className='h-[3px] w-[30px] bg-white'></div><span className='ml-2 text-[#6c63ff]'>HOW WE WORK</span>
            </div>
@@ -19,13 +19,15 @@ const Teamwork = () => {
                  <div className='rounded-[20px] bg-[#16161f] border border-white/10 p-10'>
                    <span className='text-white font-bold'>SUSTAINABLE IMPACT</span>
                    <p className='text-[#7c7a99] mt-5'>
-                       We think long-term for our clients, our community, and our craft. Good work outlasts the sprint.
+                       We focus on creating long-term value for our clients, our community, and our craft.
+                        Our goal is to build solutions that endure beyond short-term results.
                    </p>
                 </div>
                  <div className='rounded-[20px] bg-[#16161f] border border-white/10 p-10'>
                    <span className='text-white font-bold'>SHIP & LEARN</span>
                    <p className='text-[#7c7a99] mt-5'>
-                       We move fast, iterate often, and treat every launch as a learning opportunity. Progress over perfection
+                       We prioritize progress through rapid iteration and continuous learning. Every launch is an opportunity to improve,
+                        refine, and move closer to excellence.
                    </p>
                 </div>
                 
