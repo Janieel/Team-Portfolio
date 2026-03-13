@@ -7,7 +7,7 @@ const Navbar = () => {
   const pathname =  usePathname ()
   return (
     <div>
-                <div className="h-[80px] md:h-[100px] w-full bg-amber-500">
+                <div className="h-[80px] md:h-[100px] w-full ">
                 <div className="grid grid-cols-2 h-full">
 
                   {/* Logo */}

@@ -44,13 +44,16 @@ const Hero = () => {
               </div>
 
               {/* Buttons */}
-              <div className="flex  sm:flex-row gap-4 sm:gap-6 items-center justify-center text-white bg-green-300 sm:bg-amber-300">
+              <div className="flex  sm:flex-row gap-4 sm:gap-6 items-center justify-center text-white ">
                 
-                <button className="h-12 w-44 sm:h-14 sm:w-52 bg-[#4e47d0] text-[1rem] sm:text-[1.1rem] rounded-[15px] hover:bg-[#3b3878]">
+                <button className="h-12 w-44 sm:h-14 sm:w-52 bg-[#4e47d0] text-[1rem] sm:text-[1.1rem] rounded-[15px]
+                hover:bg-[#3b3878] hover:scale-[1.03]
+                   transition duration-200 ">
                   View our work
                 </button>
 
-                <button className="h-12 w-44 sm:h-14 sm:w-52 bg-[#4e47d0] text-[1rem] sm:text-[1.1rem] rounded-[15px] hover:bg-[#3b3878]">
+                <button className="h-12 w-44 sm:h-14 sm:w-52 bg-[#4e47d0] text-[1rem] sm:text-[1.1rem] rounded-[15px]
+                hover:bg-[#3b3878] hover:scale-[1.03] transition duration-200 ">
                   Meet the team
                 </button>
 

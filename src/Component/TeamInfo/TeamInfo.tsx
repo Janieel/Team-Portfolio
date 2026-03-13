@@ -6,13 +6,43 @@ const TeamInfo = () => {
        <div>
               
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6  mt-10bg-red-400 bg-blue-500 ">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6  mt-10bg-red-400 
+        
+              ">
 
-          {team.map((member, index) => (
+               
+                   {team.map((member, index) => (
             
-            <div key={index} className="rounded-[10px]">
+              <div key={index} className="rounded-[10px]">
+                
               
-              <div className="p-6 mt-10 rounded-[20px] bg-[#16161f] border border-white/10  h-120 sm:h-80 md:h-80 lg:h-90 xl:h-110"> 
+              <div className="p-6 mt-10 rounded-[20px] bg-[#16161f] border border-white/10 
+               h-120 sm:h-80 md:h-80 lg:h-90 xl:h-110 
+               
+              hover:border-purple-500/30 
+                hover:-translate-y-2
+                transition-all
+                duration-300
+                relative
+                overflow-hidden
+                group
+                cursor-pointer
+                " > 
+                 <div className="
+                  absolute 
+                  top-0 
+                  left-0 
+                  right-0 
+                  h-1
+                  bg-gradient-to-r 
+                  from-[#6c63ff] 
+                  to-[#ff6584]
+                  scale-x-0 
+                  group-hover:scale-x-100
+                  transition-transform 
+                  duration-300 
+                  origin-left
+                "></div>
 
                 <div className="h-20 w-20   ">
                   <Image
