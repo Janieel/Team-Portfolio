@@ -37,14 +37,14 @@ const Hero = () => {
               </div>
 
               {/* Description */}
-              <div className="flex justify-center px-4">
+              <div className="flex justify-center px-4 mt-2 sm:mt-0">
                 <span className="text-[0.9rem] sm:text-[1rem] md:text-[1.2rem] text-center text-white max-w-[700px] mb-10">
                   Cross-functional team of engineers, designers, and thinkers crafting products that leave a mark.
                 </span>
               </div>
 
               {/* Buttons */}
-              <div className="flex  sm:flex-row gap-4 sm:gap-6 items-center justify-center text-white ">
+              <div className="flex  sm:flex-row gap-3 sm:gap-6 items-center justify-center text-white ">
                 
                 <button className="h-12 w-44 sm:h-14 sm:w-52 bg-[#4e47d0] text-[1rem] sm:text-[1.1rem] rounded-[15px]
                 hover:bg-[#3b3878] hover:scale-[1.03]

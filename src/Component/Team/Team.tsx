@@ -3,7 +3,7 @@ import TeamCard from "../TeamCard/TeamCard"
 const Team = () => {
   return (
     <div>
-           <div className="mt-24 md:mt-40 px-6 md:px-20">
+           <div className=" mt-30 sm:mt-24 md:mt-40 px-6 md:px-20 ">
 
               {/* Small heading */}
               <div className="flex items-center">
