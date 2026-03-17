@@ -45,7 +45,7 @@ const Navbar = () => {
                       </Link>
 
                       <Link
-                        href="/Project"
+                        href="/project"
                         className={`
                           h-10 md:h-12
                           px-4 md:px-6

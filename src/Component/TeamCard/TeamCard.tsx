@@ -5,10 +5,10 @@ const TeamCard = () => {
   return (
     <div>
         <div>
-            <div className=' rounded-[10px] relative z-10  '>
+            <div className=' rounded-[10px] '>
                 <TeamInfo/>   
             </div>
-            <div className="relative z-20 bg-black pt-[100vh]">
+            <div className="relative z-20 pt-[100vh] sm:pt-0">
                <Teamwork/>
             </div>
         

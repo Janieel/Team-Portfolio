@@ -34,11 +34,11 @@ const TeamInfo = () => {
 
   return (
     <div ref={containerRef}>
-      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 mt-10 ">
+      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 mt-10 bg-red-400">
 
         {team.map((member, index) => (
 
-          <div key={index} className="rounded-[10px] panel">
+          <div key={index} className="rounded-[10px] panel min-h-screen sm:min-h-0">
 
             <div
               className="p-6 mt-10 rounded-[20px] bg-[#16161f] border border-white/10
