@@ -22,7 +22,7 @@ const TeamInfo = () => {
           trigger: panel,
           start: "top top",
           pin: true,
-          pinSpacing: false
+          pinSpacing: true
         });
       });
     }
