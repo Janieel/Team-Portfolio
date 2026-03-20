@@ -8,7 +8,7 @@ const TeamCard = () => {
             <div className=' rounded-[10px] '>
                 <TeamInfo/>   
             </div>
-            <div className="relative z-20 pt-[100vh] sm:pt-0">
+            <div className=" mt-20 sm:mt-30 relative z-10  pt-[70vh] sm:pt-0">
                <Teamwork/>
             </div>
         

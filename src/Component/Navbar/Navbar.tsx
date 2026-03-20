@@ -7,7 +7,7 @@ const Navbar = () => {
   const pathname =  usePathname ()
   return (
     <div>
-                <div className="h-[80px] md:h-[100px] w-full ">
+                <div className="h-[80px] md:h-[100px] w-full shadow-lg bg-[#16161f]  fixed top-0 left-0 z-50">
                 <div className="grid grid-cols-2 h-full">
 
                   {/* Logo */}
@@ -36,9 +36,9 @@ const Navbar = () => {
                           px-4 md:px-6
                           rounded-[10px]
                           flex items-center justify-center
-                          hover:bg-[#141228]
+                          hover:bg-[#b6b5c9]
                           text-sm md:text-base
-                          ${pathname === "/" ? "bg-[#141228] text-[#6c63ff]" : "text-[#6c63ff]"}
+                          ${pathname === "/" ? "bg-[#b6b5c9] text-[#6c63ff]" : "text-[#6c63ff]"}
                         `}
                       >
                         About
@@ -51,9 +51,9 @@ const Navbar = () => {
                           px-4 md:px-6
                           rounded-[10px]
                           flex items-center justify-center
-                          hover:bg-[#141228]
+                          hover:bg-[#b6b5c9]
                           text-sm md:text-base
-                          ${pathname === "/Project" ? "bg-[#141228] text-[#6c63ff]" : "text-[#6c63ff]"}
+                          ${pathname === "/Project" ? "bg-[#b6b5c9] text-[#6c63ff]" :  "  text-[#6c63ff]"}
                         `}
                       >
                         Project

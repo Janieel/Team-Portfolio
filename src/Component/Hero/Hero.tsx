@@ -1,9 +1,19 @@
-import React from 'react'
+"use client";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 
 const Hero = () => {
+         useEffect(() => {
+             AOS.init({
+               duration: 1000, // default animation time
+               once: true,     // animate only once
+             });
+           }, []);
   return (
          <div>
-           <div className="pt-10 px-4">
+           <div className="pt-10 mt-20 sm:mt-30 px-4" data-aos="fade-up">
 
               {/* Collaboration Badge */}
               <div className="flex justify-center items-center">

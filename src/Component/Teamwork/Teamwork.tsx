@@ -1,8 +1,23 @@
+"use client";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
+
 
 const Teamwork = () => {
+ 
+     
+    useEffect(() => {
+      AOS.init({
+        duration: 1000, // default animation time
+        once: true,     // animate only once
+      });
+    }, []);
   return (
+     
     <div> 
-           <div className=" px-6 ">
+           <div className=" px-6  "data-aos="fade-up">
 
                  
                   <div className="flex items-center">
