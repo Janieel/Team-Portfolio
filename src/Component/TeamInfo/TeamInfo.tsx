@@ -2,35 +2,15 @@
 import Image from "next/image";
 import team from "@/Data/Team";
 
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import {  useRef } from "react";
+import { usePanelScroll } from "@/Hooks/usePanelScroll";
 
-gsap.registerPlugin(ScrollTrigger);
 
 const TeamInfo = () => {
-  const containerRef = useRef<HTMLDivElement | null>(null);
 
-  useEffect(() => {
-    if (!containerRef.current) return;
+       const containerRef = useRef<HTMLDivElement>(null);
+        usePanelScroll(containerRef);
 
-    if (window.innerWidth < 640) {
-      const panels = gsap.utils.toArray<HTMLElement>(".panel");
-
-      panels.forEach((panel) => {
-        ScrollTrigger.create({
-          trigger: panel,
-          start: "top top",
-          pin: true,
-          pinSpacing: false
-        });
-      });
-    }
-
-    return () => {
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-    };
-  }, []);
 
   return (
     <div ref={containerRef}>

@@ -59,6 +59,22 @@ const Navbar = () => {
                         Project
                       </Link>
 
+                       <Link
+                        href="/partner"
+                        className={`
+                          h-10 md:h-12
+                          px-4 md:px-6
+                          rounded-[10px]
+                          hidden 
+                           items-center justify-center
+                          hover:bg-[#b6b5c9]
+                          text-sm md:text-base
+                          ${pathname === "/partner" ? "bg-[#b6b5c9] text-[#6c63ff]" : "text-[#6c63ff]"}
+                        `}
+                      >
+                        Partner
+                      </Link>
+
                     </div>
                   </div>
 
