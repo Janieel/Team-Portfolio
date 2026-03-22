@@ -6,9 +6,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export const usePanelScroll = (
-  containerRef: React.RefObject<HTMLElement>
-) => {
+  export const usePanelScroll = <T extends HTMLElement>(
+    containerRef: React.RefObject<T | null>
+  ) => {
+
   useEffect(() => {
     if (!containerRef.current) return;
 
@@ -28,7 +29,7 @@ export const usePanelScroll = (
           });
         });
       }
-    }, containerRef);
+    }, containerRef.current);
 
     return () => ctx.revert();
   }, [containerRef]);

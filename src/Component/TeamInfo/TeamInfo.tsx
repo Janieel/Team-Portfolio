@@ -3,13 +3,13 @@ import Image from "next/image";
 import team from "@/Data/Team";
 
 import {  useRef } from "react";
-import { usePanelScroll } from "@/Hooks/usePanelScroll";
+import { usePanelScroll } from "@/hooks/usePanelScroll";
 
 
 const TeamInfo = () => {
 
-       const containerRef = useRef<HTMLDivElement>(null);
-        usePanelScroll(containerRef);
+         const containerRef = useRef<HTMLDivElement>(null);
+         usePanelScroll(containerRef);
 
 
   return (
