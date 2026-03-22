@@ -1,13 +1,20 @@
-import type { NextConfig } from "next";
 import path from "path";
+import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* your existing config options */
+  experimental: {
+    turbo: false,
+  },
   webpack: (config) => {
-    // Add alias @ => src
-    config.resolve.alias['@'] = path.resolve(__dirname, 'src');
+    // Ensure resolve and alias exist
+    if (!config.resolve) config.resolve = {};
+    if (!config.resolve.alias) config.resolve.alias = {};
+
+    // Add @ alias safely
+    (config.resolve.alias as Record<string, string>)["@"] = path.resolve(__dirname, "src");
+
     return config;
   },
-};
+} as NextConfig;
 
 export default nextConfig;
