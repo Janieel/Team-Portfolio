@@ -7,7 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export const usePanelScroll = (
-  containerRef: React.RefObject<HTMLElement | null>
+  containerRef: React.RefObject<HTMLElement>
 ) => {
   useEffect(() => {
     if (!containerRef.current) return;
@@ -16,7 +16,7 @@ export const usePanelScroll = (
       if (window.innerWidth < 640) {
         const panels = gsap.utils.toArray<HTMLElement>(
           ".panel",
-          containerRef // ✅ scoped properly
+          containerRef.current
         );
 
         panels.forEach((panel) => {
