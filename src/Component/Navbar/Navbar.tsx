@@ -53,7 +53,7 @@ const Navbar = () => {
                           flex items-center justify-center
                           hover:bg-[#b6b5c9]
                           text-sm md:text-base
-                          ${pathname === "/Project" ? "bg-[#b6b5c9] text-[#6c63ff]" :  "  text-[#6c63ff]"}
+                          ${pathname === "/project" ? "bg-[#b6b5c9] text-[#6c63ff]" :  "  text-[#6c63ff]"}
                         `}
                       >
                         Project

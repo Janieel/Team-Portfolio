@@ -26,6 +26,20 @@ const Team = [
       "Ecosystem Analysis",
       "Narrative Strategy"
     ]
+  },
+    {
+    name: "KIM",
+    role: "content writer| video creator| KOL |web developer",
+    image: "/Images/kim.png",
+    bio: "Creating content that educates, inspires, and sparks conversations. Bridging storytelling with strategy and connecting ideas to real people.",
+    skills: [
+      "Content writing",
+      "Video Production",
+      "SMM",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ]
   }
 ];
 

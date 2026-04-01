@@ -64,7 +64,7 @@ const Hero = () => {
 
                 <button className="h-12 w-44 sm:h-14 sm:w-52 bg-[#4e47d0] text-[1rem] sm:text-[1.1rem] rounded-[15px]
                 hover:bg-[#3b3878] hover:scale-[1.03] transition duration-200 ">
-                  Meet the team
+                  <a href="#TeamInfo"></a>  Meet the team
                 </button>
 
               </div>

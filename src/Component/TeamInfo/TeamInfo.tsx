@@ -43,7 +43,7 @@ const TeamInfo = () => {
                   alt={member.name}
                   width={80}
                   height={80}
-                  className="rounded-[10px] object-cover"
+                  className="rounded-[10px] object-cover "
                 />
               </div>
 
@@ -58,6 +58,7 @@ const TeamInfo = () => {
               <p className="mt-2 text-[#7c7a99] text-[0.9rem]">
                 {member.bio}
               </p>
+              
 
               <div className="mt-5 flex flex-wrap gap-2 text-[0.7rem] text-[#a09af8]">
 
